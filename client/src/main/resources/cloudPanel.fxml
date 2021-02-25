@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="400.0" prefWidth="600.0" spacing="5" xmlns="http://javafx.com/javafx/8.0.202" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.CloudPanelController">
+    <padding>
+        <Insets bottom="5.0" left="2.5" right="5.0" top="5.0" />
+    </padding>
+    <Label alignment="CENTER" maxWidth="Infinity" text="Облако" textAlignment="CENTER" VBox.vgrow="ALWAYS">
+        <font>
+            <Font name="System Bold" size="24.0" />
+        </font>
+    </Label>
+    <HBox>
+        <TextField fx:id="pathField" editable="false" HBox.hgrow="ALWAYS" />
+        <Button focusTraversable="false" onAction="#btnUpperKey" text="Вверх" />
+    </HBox>
+    <TableView fx:id="clientFiles" VBox.vgrow="ALWAYS" />
+    <HBox>
+        <Button focusTraversable="false" maxWidth="Infinity" onAction="#btnNew" text="Новый каталог" HBox.hgrow="ALWAYS">
+         <HBox.margin>
+            <Insets right="5.0" />
+         </HBox.margin></Button>
+        <Button focusTraversable="false" maxWidth="Infinity" onAction="#btnRename" text="Переименовать" HBox.hgrow="ALWAYS">
+         <HBox.margin>
+            <Insets right="5.0" />
+         </HBox.margin></Button>
+        <Button focusTraversable="false" maxWidth="Infinity" onAction="#btnDelete" text="Удалить" HBox.hgrow="ALWAYS" />
+    </HBox>
+    <properties>
+        <ctrl><fx:reference source="controller"/></ctrl>
+    </properties>
+</VBox>
