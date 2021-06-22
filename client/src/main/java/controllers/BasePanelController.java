@@ -82,7 +82,6 @@ public abstract class BasePanelController implements Initializable {
         }
     }
 
-
     private void initTableView() {
         TableColumn<FileInfo, String> fileName = new TableColumn<>("Name");
         fileName.setCellValueFactory(param -> new SimpleStringProperty(param.getValue().getName()));

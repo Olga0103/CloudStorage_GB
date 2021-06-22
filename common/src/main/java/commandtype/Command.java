@@ -9,7 +9,6 @@ public class Command extends BaseMessage {
         DELETE, RENAME, NEW
     }
 
-
     private BaseCommand command;
     private String newPath;
     private String oldPath;
@@ -28,19 +27,15 @@ public class Command extends BaseMessage {
     }
 
     public BaseCommand getCommand() {
-
         return command;
     }
 
     public String getPath() {
-
         return newPath;
     }
 
-
-
     public String getOldPath() {
-
         return oldPath;
     }
+
 }

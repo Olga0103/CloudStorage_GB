@@ -31,7 +31,6 @@ public class ClientPanelController extends BasePanelController {
 
     @Override
     protected void fileCreate(Path path) {
-
         new File(path.toString()).mkdir();
     }
 
@@ -105,4 +104,5 @@ public class ClientPanelController extends BasePanelController {
         updateList(srcPath.getParent());
         updatedPanel.updateList(dstPath);
     }
+
 }

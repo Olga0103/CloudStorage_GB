@@ -5,6 +5,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 
 public class DirMessage extends BaseMessage {
+
     private String [] dir;
     private String path;
 
@@ -24,12 +25,11 @@ public class DirMessage extends BaseMessage {
     }
 
     public String[] getDir() {
-
         return dir;
     }
 
     public String getPath() {
-
         return path;
     }
+
 }

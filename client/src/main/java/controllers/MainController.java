@@ -25,7 +25,6 @@ public class MainController implements Initializable {
     }
 
     public void btnExit() {
-
         Platform.exit();
     }
 
@@ -68,5 +67,6 @@ public class MainController implements Initializable {
             new Alert(Alert.AlertType.ERROR, "select a file!").showAndWait();
         }
     }
+
 }
 

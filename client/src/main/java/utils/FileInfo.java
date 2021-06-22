@@ -43,22 +43,19 @@ public class FileInfo {
     }
 
     public String getName() {
-
         return name;
     }
 
     public FileType getType() {
-
         return type;
     }
 
     public long getSize() {
-
         return size;
     }
 
     public LocalDateTime getLastModified() {
-
         return lastModified;
     }
+
 }

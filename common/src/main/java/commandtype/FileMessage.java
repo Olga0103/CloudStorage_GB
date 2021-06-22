@@ -5,6 +5,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 
 public class FileMessage extends BaseMessage{
+
     private String dstPath;
     private String name;
     private byte[] data;
@@ -28,17 +29,15 @@ public class FileMessage extends BaseMessage{
     }
 
     public String getName() {
-
         return name;
     }
 
     public String getDstPath() {
-
         return dstPath;
     }
 
     public byte[] getData() {
-
         return data;
     }
+
 }
